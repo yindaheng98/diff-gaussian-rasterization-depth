@@ -304,7 +304,7 @@ renderCUDA(
 	uint32_t contributor = 0;
 	uint32_t last_contributor = 0;
 	float C[CHANNELS] = { 0 };
-	float D = 1000.0f;  // Median Depth. TODO: This is a hack setting max_depth to 15
+	float D = 65503.0f;  // Median Depth. TODO: This is a hack setting max_depth to 65503.0
 
 	// Iterate over batches until all done or range is complete
 	for (int i = 0; i < rounds; i++, toDo -= BLOCK_SIZE)
